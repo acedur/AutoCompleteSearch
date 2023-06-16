@@ -99,7 +99,7 @@ const AutoComplete: React.FC<AutoCompleteProps> = ({ apiUrl }) => {
         placeholder="Type to search..."
       />
       {showOptions && filteredOptions.length > 0 && (
-        <ul className="autocomplete-options">
+        <ul >
           {filteredOptions.map(item => (
             <li key={item.id} onClick={() => handleOptionClick(item.title)}>
               {highlightMatch(item.title)}
